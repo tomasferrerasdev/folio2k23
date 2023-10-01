@@ -7,13 +7,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      colors: {
-        black: '#000000',
-        white: '#FFFFFF',
-        grey: '#7D7D7D',
-        transparent: 'transparent',
-      },
+    colors: {
+      black: '#000000',
+      white: '#FFFFFF',
+      grey: '#7D7D7D',
+      transparent: 'transparent',
+    },
+    fontFamily: {
+      roobert: ['var(--font-roobert)'],
     },
   },
   plugins: [],
