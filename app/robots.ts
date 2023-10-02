@@ -1,11 +1,12 @@
-export default function robots() {
+import { MetadataRoute } from 'next';
+
+export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: '*',
-      },
-    ],
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: '/private/',
+    },
     sitemap: 'https://tomasferreras.dev/sitemap.xml',
-    host: 'https://tomasferreras.dev',
   };
 }
