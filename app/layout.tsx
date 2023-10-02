@@ -55,9 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roobert.variable} font-roobert bg-black`}>
-        {children}
-      </body>
+      <body className={`${roobert.variable} font-roobert`}>{children}</body>
     </html>
   );
 }
