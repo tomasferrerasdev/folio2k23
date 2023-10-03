@@ -7,12 +7,6 @@ const arr: ICase[] = [
   {
     imageUrl: '/images/cases/maximum.png',
     url: '/maximum',
-    tech: ['Next.js', 'Node.js', 'TypeScript', 'TailwindCSS'],
-    title: 'MAXIMUM THE HORMONE SITE',
-  },
-  {
-    imageUrl: '/images/cases/posty.png',
-    url: '/posty',
     tech: [
       'Next.js',
       'Node.js',
@@ -24,21 +18,27 @@ const arr: ICase[] = [
       'PaypalAPI',
       'Cloudinary',
     ],
-    title: 'POST MALONE SHOP',
+    title: 'MAXIMUM THE HORMONE SHOP',
+  },
+  {
+    imageUrl: '/images/cases/posty.png',
+    url: '/posty',
+    tech: ['Next.js', 'Node.js', 'TypeScript', 'TailwindCSS'],
+    title: 'TRUCKS & BIDS',
   },
 ];
 const secArr: ICase[] = [
   {
     imageUrl: '/images/cases/drible.png',
     url: '/drible',
-    tech: ['Next.js', 'Node.js', 'TypeScript', 'shadcn/ui', 'Strapi'],
+    tech: ['Next.js', 'Node.js', 'TypeScript', 'shadcn/ui', 'Sanity.io'],
     title: 'DRIBLE PODCAST',
   },
   {
-    imageUrl: '/images/cases/drible.png',
+    imageUrl: '/images/cases/data-atmos.png',
     url: '/drible',
-    tech: ['Next.js', 'Node.js', 'TypeScript', 'shadcn/ui', 'Strapi'],
-    title: 'DRIBLE PODCAST',
+    tech: ['React Native', 'Expo', 'Strapi', 'MySQL'],
+    title: 'DATA ATMOS',
   },
 ];
 
@@ -51,14 +51,14 @@ export const Cases: FC = () => {
       <div className="w-full flex flex-col justify-end ">
         <div className="w-full flex justify-end gap-[94px]">
           {arr.map(({ imageUrl, tech, title, url }, i) => (
-            <div key={i} className={`${i % 2 !== 0 ? `mt-[110px]` : ``}`}>
+            <div key={i} className={`${i % 2 !== 0 ? `mt-[100px]` : ``}`}>
               <Case imageUrl={imageUrl} tech={tech} title={title} url={url} />
             </div>
           ))}
         </div>
         <div className="w-full flex justify-end gap-[94px]">
           {secArr.map(({ imageUrl, tech, title, url }, i) => (
-            <div key={i} className={`${i % 2 !== 0 ? `mt-[110px]` : ``}`}>
+            <div key={i} className={`${i % 2 !== 0 ? `mt-[100px]` : ``}`}>
               <Case imageUrl={imageUrl} tech={tech} title={title} url={url} />
             </div>
           ))}

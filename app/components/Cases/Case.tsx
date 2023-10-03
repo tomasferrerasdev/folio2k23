@@ -17,7 +17,7 @@ export const Case: FC<ICase> = ({ imageUrl, tech, title, url }) => {
         <hr className={`h-px w-full bg-black border-0 dark:bg-gray-700`} />
         <div className="flex flex-wrap gap-x-1 max-w-[30vw]">
           {tech.map((tech, index) => (
-            <span className="text-grey text-base" key={index}>
+            <span className="text-black text-base" key={index}>
               {index === 0 ? `` : `/ `}
               {tech}
             </span>

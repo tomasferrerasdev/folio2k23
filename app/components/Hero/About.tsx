@@ -13,7 +13,7 @@ export const About = () => {
             href="https://tuxdi.com/"
             target="_blank"
             aria-label="Visit Tuxdi website"
-            className="underline-offset-8 underline"
+            className="underline-offset-8 underline text-2xl"
           >
             @tuxdi
           </a>
