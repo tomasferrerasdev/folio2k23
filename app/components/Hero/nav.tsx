@@ -1,6 +1,6 @@
+import { NavProps } from '@/app/interfaces/interfaces';
 import Image from 'next/image';
 import { FC } from 'react';
-import { NavProps } from '../interfaces/interfaces';
 import { NavTime } from './navTime';
 
 export const Nav: FC<NavProps> = ({ city }) => {
