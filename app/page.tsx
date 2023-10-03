@@ -1,4 +1,7 @@
-import { Nav } from './components/nav';
+'use client';
+import Lenis from '@studio-freight/lenis';
+import { useEffect } from 'react';
+import { Hero } from './components/Hero/Hero';
 
 interface Props {
   searchParams: {
@@ -8,11 +11,21 @@ interface Props {
 }
 
 export default function Home({ searchParams }: Props) {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   const { city } = searchParams;
 
   return (
-    <main className="h-screen w-full text-white text-3xl bg-[url('/images/bg.png')]">
-      <Nav city={city} />
+    <main>
+      <Hero city={city} />
     </main>
   );
 }

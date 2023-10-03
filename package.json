@@ -17,9 +17,17 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@react-three/drei": "^9.86.3",
+    "@react-three/fiber": "^8.14.4",
+    "@studio-freight/lenis": "^1.0.25",
+    "@types/three": "^0.156.0",
+    "framer-motion": "^10.16.4",
+    "leva": "^0.9.35",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "three": "^0.157.0",
+    "three-stdlib": "^2.26.11"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",

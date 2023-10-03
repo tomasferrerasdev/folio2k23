@@ -1,14 +1,11 @@
 import Image from 'next/image';
 import { FC } from 'react';
+import { NavProps } from '../interfaces/interfaces';
 import { NavTime } from './navTime';
-
-export interface NavProps {
-  city: string;
-}
 
 export const Nav: FC<NavProps> = ({ city }) => {
   return (
-    <nav className="mx-[16px] md:mx-[50px] flex items-center justify-between">
+    <nav className="px-[16px] md:px-[50px] flex items-center justify-between absolute z-10 w-full">
       <Image
         src={`/images/logo.svg`}
         alt="logo"
