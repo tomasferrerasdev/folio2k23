@@ -1,6 +1,7 @@
 'use client';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { FC, Suspense, useEffect, useState } from 'react';
+
 import * as THREE from 'three';
 import { Background } from './Background';
 

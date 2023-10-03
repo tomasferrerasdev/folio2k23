@@ -4,9 +4,10 @@ import { NavProps } from '@/app/interfaces/interfaces';
 import { motion, useSpring } from 'framer-motion';
 import Image from 'next/image';
 import { FC, MouseEventHandler } from 'react';
-import { About } from '../About';
-import { TCanvas } from '../TCanvas';
-import { Nav } from '../nav';
+
+import { About } from './About';
+import { Nav } from './nav';
+import { TCanvas } from './TCanvas';
 
 export const Hero: FC<NavProps> = ({ city }) => {
   const spring = {

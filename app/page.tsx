@@ -1,6 +1,7 @@
 'use client';
 import Lenis from '@studio-freight/lenis';
 import { useEffect } from 'react';
+import { Cases } from './components/Cases/Cases';
 import { Hero } from './components/Hero/Hero';
 
 interface Props {
@@ -26,6 +27,7 @@ export default function Home({ searchParams }: Props) {
   return (
     <main>
       <Hero city={city} />
+      <Cases />
     </main>
   );
 }

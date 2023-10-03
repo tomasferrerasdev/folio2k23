@@ -1,8 +1,8 @@
+import { cnoise21 } from '@/app/glsl/noise';
 import { Plane } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { FC } from 'react';
 import * as THREE from 'three';
-import { cnoise21 } from '../glsl/noise';
 
 export const Background: FC = () => {
   const shader: THREE.Shader = {
