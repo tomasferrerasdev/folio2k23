@@ -10,7 +10,7 @@ function ZoomIn() {
 }
 
 export const TCanvas: FC = () => {
-  const [dpr, setDpr] = useState<number | null>(null);
+  const [dpr, setDpr] = useState<number>(1);
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setDpr(window.devicePixelRatio);

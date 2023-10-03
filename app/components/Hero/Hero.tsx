@@ -43,7 +43,7 @@ export const Hero: FC<NavProps> = ({ city }) => {
       >
         <Image
           src={`/images/me.png`}
-          alt="image"
+          alt="of tomas ferreras"
           width={548}
           height={720}
           className="select-none"
