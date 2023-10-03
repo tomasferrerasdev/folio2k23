@@ -1,6 +1,6 @@
 'use client';
+import { NavProps } from '@/app/interfaces/interfaces';
 import { FC, useEffect, useState } from 'react';
-import { NavProps } from '../interfaces/interfaces';
 
 export const NavTime: FC<NavProps> = ({ city }) => {
   const [currentTime, setCurrentTime] = useState('');
