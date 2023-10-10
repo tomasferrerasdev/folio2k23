@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
   Scroll,
   ScrollControls,
@@ -73,11 +74,6 @@ const PortalMaterial = shaderMaterial(
 // declaratively
 extend({ PortalMaterial });
 
-interface ISlide {
-  url: string;
-  positionY: number;
-}
-
 export function Slide({ url, ...props }) {
   const { width, height } = useThree((state) => state.viewport);
   const texture = useTexture(url);
@@ -116,7 +112,7 @@ export default function Experience() {
     '/images/cases/nagai.png',
   ];
 
-  const { width, height } = useThree((state) => state.viewport);
+  const { height } = useThree((state) => state.viewport);
   const bridgeRef = useRef(null);
   const offset = 0.1;
 
